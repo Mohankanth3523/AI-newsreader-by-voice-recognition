@@ -4,7 +4,7 @@ import wordsToNumbers from "words-to-numbers";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { NewsCards } from "./components";
 import { styled } from "@mui/material/styles";
-import logo from './images/logo.jpg';
+
 
 const LogoContainer = styled("div")(({ theme }) => ({
   padding: "0 5%",
@@ -87,7 +87,7 @@ const App = () => {
 
   useEffect(() => {
     alanBtn({
-      key: "5e778b3031fb17a77bda4697fcefb9712e956eca572e1d8b807a3e2338fdd0dc/stage",
+      key: "0666e73b3a94cbd77bda4697fcefb9712e956eca572e1d8b807a3e2338fdd0dc/stage",
       onCommand: ({ command, articles, number }) => {
         if (command === "newHeadlines") {
           setNewsArticles(articles);
